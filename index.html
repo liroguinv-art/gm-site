@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>G&M Soluções Financeiras — Crédito, Consórcio e Seguros</title>
+  <meta name="description" content="G&M Soluções Financeiras: assessoria em crédito, consórcios, seguros e consultoria financeira. Atendimento personalizado em Aparecida de Goiânia." />
+  <meta name="theme-color" content="#0f172a" />
+  <!-- Tailwind Play CDN (uso simples, sem build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Pequeno ajuste para botão flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-slate-50">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-slate-800 text-white rounded flex items-center justify-center font-bold">G&amp;M</div>
+        <div>
+          <h1 class="text-lg font-semibold">G&amp;M Soluções Financeiras</h1>
+          <p class="text-sm text-slate-500">Conectando você às melhores oportunidades financeiras</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#services" class="hover:text-slate-900">Serviços</a>
+        <a href="#about" class="hover:text-slate-900">Quem Somos</a>
+        <a href="#contact" class="hover:text-slate-900">Contato</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="menuBtn" class="text-slate-600">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">G&amp;M Soluções Financeiras — Conectando você às melhores oportunidades de crédito</h2>
+        <p class="text-slate-600 mb-6">Ajudamos pessoas e empresas a conquistarem seus objetivos financeiros com segurança, transparência e agilidade. Especialistas em crédito, consórcio, seguros e consultoria financeira personalizada.</p>
+        <div class="flex gap-3">
+          <!-- Substitua SEUDDDNUMERO abaixo -->
+          <a href="https://wa.me/55SEUDDDNUMERO?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+G%26M+Solu%C3%A7%C3%B5es+Financeiras." target="_blank" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3 rounded shadow">
+            📲 Fale no WhatsApp
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 border border-slate-200 px-4 py-3 rounded text-slate-700 hover:bg-slate-100">Contato</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="font-semibold mb-3">Solicite uma avaliação gratuita</h3>
+        <!-- Substitua o endpoint do Formspree (EMAIL) abaixo pelo seu endpoint -->
+        <form action="https://formspree.io/f/xldarvkg" method="POST" class="space-y-3">
+          <div>
+            <label class="block text-sm text-slate-600">Nome</label>
+            <input name="name" required class="w-full border border-slate-200 rounded px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-sm text-slate-600">Telefone / WhatsApp</label>
+            <input name="phone" required class="w-full border border-slate-200 rounded px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-sm text-slate-600">E-mail</label>
+            <input name="email" type="email" required class="w-full border border-slate-200 rounded px-3 py-2" />
+          </div>
+          <div>
+            <label class="block text-sm text-slate-600">Serviço de interesse</label>
+            <select name="service" class="w-full border border-slate-200 rounded px-3 py-2">
+              <option>Selecione</option>
+              <option>Acesso a Crédito</option>
+              <option>Consórcio</option>
+              <option>Seguros</option>
+              <option>Consultoria Financeira</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm text-slate-600">Mensagem (opcional)</label>
+            <textarea name="message" rows="3" class="w-full border border-slate-200 rounded px-3 py-2"></textarea>
+          </div>
+          <div class="flex items-center gap-3">
+            <button type="submit" class="bg-slate-800 text-white px-4 py-2 rounded">Enviar solicitação</button>
+            <p class="text-xs text-slate-500">Entraremos em contato em até 2 dias úteis.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="mt-12">
+      <h3 class="text-2xl font-bold mb-4">Nossos serviços</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="bg-white p-5 rounded shadow">
+          <h4 class="font-semibold mb-2">Acesso a Crédito</h4>
+          <p class="text-sm text-slate-600">Intermediamos propostas de crédito pessoal, empresarial e financiamentos, buscando as melhores taxas e condições.</p>
+        </article>
+        <article class="bg-white p-5 rounded shadow">
+          <h4 class="font-semibold mb-2">Consórcios</h4>
+          <p class="text-sm text-slate-600">Consórcios para automóveis, imóveis e serviços, com acompanhamento completo durante o processo.</p>
+        </article>
+        <article class="bg-white p-5 rounded shadow">
+          <h4 class="font-semibold mb-2">Seguros</h4>
+          <p class="text-sm text-slate-600">Seguros de vida, auto, residencial e empresarial adaptados ao seu perfil.</p>
+        </article>
+        <article class="bg-white p-5 rounded shadow">
+          <h4 class="font-semibold mb-2">Consultoria Financeira</h4>
+          <p class="text-sm text-slate-600">Análises personalizadas para organizar, planejar e potencializar suas finanças.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-12">
+      <h3 class="text-2xl font-bold mb-4">Quem somos</h3>
+      <div class="bg-white p-6 rounded shadow text-slate-700">
+        <p class="mb-3">A <strong>G&amp;M Soluções Financeiras</strong> simplifica o acesso a produtos e serviços financeiros, ajudando clientes a tomarem decisões seguras e inteligentes. Atuamos como assessoria financeira independente, conectando pessoas e empresas às melhores opções do mercado.</p>
+        <p>Nossa equipe é formada por profissionais experientes, comprometidos em oferecer atendimento transparente e soluções personalizadas para cada perfil. Mais do que consultoria, somos parceiros estratégicos na sua jornada financeira.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12 mb-12 grid md:grid-cols-2 gap-6 items-start">
+      <div class="bg-white p-6 rounded shadow text-slate-700">
+        <h4 class="text-lg font-semibold mb-3">Fale conosco</h4>
+        <p class="mb-2">Quer saber mais sobre nossos serviços ou tirar dúvidas? Nossa equipe está pronta para ajudar.</p>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><strong>E-mail:</strong> <a href="mailto:contato@gemsolucoesfinanceiras.com.br" class="text-emerald-600">contato@gemsolucoesfinanceiras.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="tel:+5534998064295" class="text-emerald-600">+55 (34) 99806-4295</a></li>
+          <li><strong>Endereço:</strong> Av. V5, nº S/N, Bairro Vera Cruz, Aparecida de Goiânia – GO</li>
+          <li><strong>Horário:</strong> Segunda a sexta, 9h às 18h</li>
+        </ul>
+        <div class="mt-4">
+          <a href="/privacy.html" class="text-sm text-slate-500 hover:underline">Política de Privacidade</a>
+          <span class="mx-2 text-slate-300">•</span>
+          <a href="/terms.html" class="text-sm text-slate-500 hover:underline">Termos de Uso</a>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="font-semibold mb-3">Envie sua documentação (opcional)</h4>
+        <p class="text-sm text-slate-600 mb-3">Se preferir, envie documentos iniciais pelo formulário de contato ou aguarde nossa orientação por e-mail/WhatsApp.</p>
+        <div class="w-full h-40 bg-slate-100 rounded flex items-center justify-center text-slate-400">
+          Espaço reservado (integração de upload em próxima fase)
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-sm text-slate-600">© 2025 G&amp;M Soluções Financeiras. CNPJ: 45.839.816/0001-41</div>
+      <div class="text-sm text-slate-600">Desenvolvido com ♥ por G&amp;M</div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float - substitua SEUDDDNUMERO -->
+  <a class="whatsapp-float" href="https://wa.me/5534998064295?text=Ol%C3%A1%2C+gostaria+de+saber+mais+sobre+os+servi%C3%A7os+da+G%26M+Solu%C3%A7%C3%B5es+Financeiras." target="_blank" aria-label="WhatsApp">
+    <div class="bg-emerald-500 rounded-full w-14 h-14 flex items-center justify-center shadow-lg text-white text-xl">💬</div>
+  </a>
+
+  <script>
+    // menu mobile simples (se necessário)
+    document.getElementById('menuBtn')?.addEventListener('click', function() {
+      alert('No editor final (Wix ou deploy), o menu fica visível. Se optar por hospedar este HTML, posso adicionar menu mobile funcional.');
+    });
+  </script>
+</body>
+</html>
